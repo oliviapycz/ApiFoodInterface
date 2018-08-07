@@ -1,6 +1,7 @@
-# apifoodinterface
+# Api Food Interface
 
 > Nuxt.js project
+> Bulma framework
 
 ## Build Setup
 

@@ -4,13 +4,13 @@
     <section class="landingpage">
       <div>
         <app-logo/>
-        <h1 class="title">
+        <h1 class="title is-size-3-mobile">
           Api Food Interface
         </h1>
-        <h2 class="subtitle">
+        <h2 class="subtitle is-size-5-mobile">
           An Open Source Project
         </h2>
-        <div class="links">
+        <div class="links flex">
           <a
             href="#landingpage1"
             class="button--green">How it works?</a>
@@ -42,7 +42,8 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+
 .landingpage {
   min-height: 93vh;
   display: flex;
@@ -88,6 +89,14 @@ export default {
 
 .links {
   padding-top: 15px;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+
+  a {
+    padding: 5px;
+  }
 }
 </style>
 

@@ -31,7 +31,16 @@
   }
 </script>
 
-<style>
+<style lang="scss">
+$color-principal-green:#3b8070;
+$color-principal-maroon:#926266;
+
+// breakpoint variables
+$lg: 1407px;
+$md: 1215px;
+$sm: 1023px;
+$xs: 768px;
+
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
@@ -54,7 +63,7 @@ html {
   display: inline-block;
   border-radius: 4px;
   border: 1px solid #3b8070;
-  color: #3b8070;
+  color: $color-principal-green;
   text-decoration: none;
   padding: 10px 30px;
 }
@@ -68,7 +77,7 @@ html {
   display: inline-block;
   border-radius: 4px;
   border: 1px solid #35495e;
-  color: #926266;
+  color: $color-principal-maroon;
   text-decoration: none;
   padding: 10px 30px;
   margin-left: 15px;

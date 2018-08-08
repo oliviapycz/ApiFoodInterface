@@ -1,5 +1,5 @@
 <template>
-  <img src="../assets/arcim.jpg" alt="">
+  <img src="../assets/arcim.jpg" alt="arcimboldo">
 </template>
 
 <style>

@@ -9,7 +9,7 @@
 
     <footer class="footer">
       <div class="content has-text-centered">
-        <p>Olivia Py-Cz - AπFood - 2018</p>
+        <p>Olivia Py-Cz - AπFood - {{ year }}</p>
       </div>
     </footer>
 
@@ -23,23 +23,17 @@
     components: {
       Navbar
     },
-    asyncData () {
-        return {
-            year: 2018
-        };
-    },
+    data () {
+      return {
+        year : new Date().getFullYear()
+      }
+    }
   }
 </script>
 
 <style lang="scss">
-$color-principal-green:#3b8070;
-$color-principal-maroon:#926266;
+@import '@/scss/styles.scss';
 
-// breakpoint variables
-$lg: 1407px;
-$md: 1215px;
-$sm: 1023px;
-$xs: 768px;
 
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -59,33 +53,8 @@ html {
   margin: 0;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: $color-principal-green;
-  text-decoration: none;
-  padding: 10px 30px;
-}
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--maroon {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: $color-principal-maroon;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--maroon:hover {
-  color: #fff;
-  background-color: #926266;
-}
+h1 { @include font-size-map($h1-font-size); }
+h2 { @include font-size-map($h2-font-size); }
 </style>
 

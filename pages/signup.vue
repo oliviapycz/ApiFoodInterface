@@ -5,7 +5,7 @@
     </h2>
     
     <div class="columns is-centered">
-      <form action="" method="post" class=" column is-half">
+      <form action="/" method="post" class="column is-half">
 
         <div class="field">
           <label class="label">Username</label>
@@ -64,6 +64,13 @@
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  
+}
+</script>
+
 
 <style>
   .title {
